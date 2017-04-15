@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #61122f;
+  color: white;
+}
+
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  height: 150px;
+  width: 150px;
+  background: url('../images/restaurant-logo_large.png');
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height: 0.75;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.navbar-brand p {
+  margin-top: 15px;
+  color: #000;
+}
+
+.navbar-brand p span {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+.navbar-brand a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.navbar-toggle .icon-bar,
+.navbar-toggle {
+  border: 1px solid #61122f;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  padding: 10px;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list #phone {
+  margin-top: 5px;
+}
+
+#nav-list #phone a {
+  text-align: right;
+  padding-bottom: 0;
+}
+
+#nav-list #phone div {
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 0.8em;
+}
+
+.navbar-toggle {
+  clear: left;
+  margin-top: -30px;
+}
+
+.jumbotron {
+  /*background:url('../images/jumbotron_1200.jpg');
+	height:600px;*/
+  background-color: #61122f;
+}
+
+.phone-call>a {
+  display: block;
+  background-color: #f6b319;
+  color: #61122f;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+#ph-text {
+  color: white;
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  letter-spacing: 0.1em;
+}
+
+#tile1,
+#tile2,
+#tile3 {
+  height: 200px;
+  width: 100%;
+  border: 1px solid white;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#tile1 {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#tile2 {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#tile3 {
+  background-position: center;
+}
+
+.menu-tiles span,
+#tile3 span {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  opacity: .6;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  line-height: 1.9;
+  padding-top: 20px;
+  margin-top: 15px;
+}
+
+#footer-details span:first-child {
+  font-size: 0.9em;
+}
+
+footer #footer-details span:nth-child(n+2) {
+  font-size: 0.7em;
+  /*line-height: 1.9;*/
+}
+
+#addr p {
+  font-size: 0.6em;
+  color: green;
+}
+
+#test p {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#test p:nth-child(2) {
+  margin-top: 20px;
+}
+
+#copyright {
+  margin-top: 25px;
+  font-size: 0.7em;
+}
+
+.cat-item {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto 15px;
+}
+
+.cat-item span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  border: 1px solid black;
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+  text-align: center;
+}
+
+#main-content> p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+
+.item-head {
+  font-size: 1.1em;
+}
+
+.item-image {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: -15px;
+}
+
+.menu-tile {
+  margin-top: 25px;
+}
+
+.item-image span:first-child {
+  font-size: 0.8em;
+}
+
+hr {
+  width: 70%;
+}
+
+.item-image .qty {
+  font-size: 0.7em;
+}
+
+.item-desc {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+@media(min-width:768px) and (max-width:991px) {
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png')no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+  #nav-list li {
+    font-size: 16px;
+  }
+  #nav-list a {
+    padding: 5px;
+  }
+  .navbar-brand h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media(max-width:767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p {
+    font-size: 0.8em;
+    margin-top: 12px;
+  }
+  .navbar-brand img {
+    height: 20px;
+  }
+  #tile1,
+  #tile2,
+  #tile3 {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  #footer-details >div {
+    text-align: center;
+  }
+  #footer-details hr {
+    width: 50%;
+  }
+  .item-head,
+  .item-desc {
+    text-align: center;
+  }
+  .item-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media(max-width:479px) {
+  #tile1,
+  #tile2,
+  #tile3 {
+    width: 280px;
+  }
+  .col-xxs-12 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
